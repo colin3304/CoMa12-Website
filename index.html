@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.6.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="pictures/logo.jpeg" type="image/ico">
+    <title>CoMa12 - Offical Website</title>
+</head>
+
+<body>
+<header class="mainHeader">
+    <div class="nav">
+        <a href="#" id="navHome">HOME</a>
+        <a href="#" id="navMusic">MUSIC</a>
+        <a href="index.html"><img class="logo" src="pictures/logo.jpeg" alt="picture not found"></a>
+        <a href="#" id="navAboutus">ABOUT US</a>
+        <a href="#" id="navContact">CONTACT</a>
+    </div>
+</header>
+
+<div class="content">
+    <img class="wir" src="pictures/wir.jpeg" alt="picture not found">
+
+    <div class="home">
+        <div class="btnHome" id="btnHome" onclick="showSidebarHome()">
+            <img src="pictures/menu.png" alt="picture not found">
+        </div>
+        <nav class="sidebarHome" id="sidebarHome">
+            <ul>
+                <li>
+                    <a class="linksHome" id="navStart" href="#">START</a>
+                </li>
+                <li>
+                    <a class="linksHome" id="navMusic1" href="#">MUSIC</a>
+                </li>
+                <li>
+                    <a class="linksHome" id="navAboutus1" href="#">ABOUT US</a>
+                </li>
+                <li>
+                    <a class="linksHome" id="navContact1" href="#">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+        <h1>HOME</h1>
+        <div class="homeContainer">
+            <div class="events">
+                <h2>EVENT TERMINE 2024</h2>
+                <ul>
+                    <li>02.03.2024 - Goldene Krone Darmstadt <br>22:00 Uhr</li>
+                    <li>01.06.2024 - Kerbjubiläum Dietzenbach <br>19:30 Uhr</li>
+                    <li>15.06.2024 - Reinheimer Markt <br>18:00 Uhr</li>
+                    <li>31.08.2024 - Jugendevent Reinheim</li>
+                </ul>
+            </div>
+            <div class="news">
+                <h2>NEWS</h2>
+                <p> - Unsere neue EP Pure ist jetzt auf allen Streamingplattformen verfügbar! Unterstützt uns und hört mal rein!!!</p>
+                <p> - Unter 'Music' könnt ihr euch direkt eine kleine Preview anhören</p>
+                <p> - Next Stop: Reinheimer, kommt vorbei und feiert mit uns!</p>
+            </div>
+        </div>
+        <h2>Galerie</h2>
+        <div class="galleryContainer">
+            <div class="pictureContainer">
+                <img class="galleryPicture" src="pictures/0.jpg" alt="picture not found">
+            </div>
+        </div>
+    </div>
+
+    <div class="music">
+        <div class="btnMusic" id="btnMusic" onclick="showSidebarMusic()">
+            <img src="pictures/menu.png" alt="picture not found">
+        </div>
+        <nav class="sidebarMusic" id="sidebarMusic">
+            <ul>
+                <li>
+                    <a class="linksMusic" id="navStart1" href="#">START</a>
+                </li>
+                <li>
+                    <a class="linksMusic" id="navHome1" href="#">HOME</a>
+                </li>
+                <li>
+                    <a class="linksMusic" id="navAboutus2" href="#">ABOUT US</a>
+                </li>
+                <li>
+                    <a class="linksMusic" id="navContact2" href="#">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+        <h1>MUSIC</h1>
+        <div class="musicContainer">
+            <div class="container">
+                <div id="album" class="album"></div>
+            </div>
+            <div class="titles">
+                <ol>
+                    <li>Solitude</li>
+                    <li>Monsters</li>
+                    <li>Shattered Souls</li>
+                    <li>Individual Faces</li>
+                    <li>Breakout</li>
+                    <li>New Ground</li>
+                    <li>Sun Sets Over Our Home</li>
+                    <li>Consistency</li>
+                    <li>Repetition Pt.1: Fortress</li>
+                    <li>Repetition Pt.2: Death and Life</li>
+
+                </ol>
+            </div>
+
+            <div class="musicPlayer">
+                <div class="playerContainer">
+                    <div class="playerInfo">
+                        <h4 id="playerTitle">Solitude</h4>
+                        <div class="progressContainer">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                    <audio src="music/Solitude.mp3" id="audio"></audio>
+                    <div class="imgContainer">
+                        <img src="pictures/roundcover.png" id="roundcover" alt="picture not found">
+                    </div>
+                    <div class="navigation">
+                        <button id="prev" class="actionBtn">
+                            <i class="fas fa-backward"></i>
+                        </button>
+                        <button id="play" class="actionBtn actionBtnBig">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button id="next" class="actionBtn">
+                            <i class="fas fa-forward"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="musicContainer">
+            <div class="container">
+                <div id="album2" class="album2"></div>
+            </div>
+            <div class="titles">
+                <ol>
+                    <br>
+                    <br>
+                    <li>Demon in Disguise</li>
+                    <br>
+                    <li>Broken Home (I Miss You)</li>
+                    <br>
+                    <li>Run</li>
+                    <br>
+                    <li>Can't Keep Us</li>
+                    <br>
+                    <li>Time Won't Heal</li>
+
+                </ol>
+            </div>
+
+            <div class="musicPlayer">
+                <div class="playerContainer2">
+                    <div class="playerInfo2">
+                        <h4 id="playerTitle2">Demon in Disguise</h4>
+                        <div class="progressContainer2">
+                            <div class="progress2"></div>
+                        </div>
+                    </div>
+                    <audio src="music/Demon in Disguise.mp3" id="audio2"></audio>
+                    <div class="imgContainer2">
+                        <img src="pictures/roundcover2.png" id="roundcover2" alt="picture not found">
+                    </div>
+                    <div class="navigation2">
+                        <button id="prev2" class="actionBtn2">
+                            <i class="fas fa-backward"></i>
+                        </button>
+                        <button id="play2" class="actionBtn2 actionBtnBig2">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button id="next2" class="actionBtn2">
+                            <i class="fas fa-forward"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="musicIcons">
+            <a href="https://open.spotify.com/artist/30t6EaYmkNLcwYTCV2Xh1t" target="_blank"> <img src="pictures/spotify.png" alt="picture not found"></a>
+            <a href="https://music.amazon.de/artists/B09J8FNPKC/coma12" target="_blank"> <img src="pictures/amazonmusic.png" alt="picture not found"></a>
+            <a href="https://music.apple.com/de/artist/coma12/1589766107" target="_blank"> <img id="applemusic" src="pictures/applemusic.png" alt="picture not found"></a>
+            <a href="https://www.deezer.com/de/artist/148102852" target="_blank"> <img id="deezer" src="pictures/deezer.png" alt="picture not found"></a>
+        </div>
+
+        <!--Youtube Videos-->
+        <div class="yt">
+            <iframe class="ytContent" src="https://www.youtube.com/embed/ch94nfYMF4E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe class="ytContent" src="https://www.youtube.com/embed/eiQ890Vao_I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+
+    </div>
+
+    <div class="aboutus">
+        <div class="btnAboutus" id="btnAboutus" onclick="showSidebarAboutus()">
+            <img src="pictures/menu.png" alt="picture not found">
+        </div>
+        <nav class="sidebarAboutus" id="sidebarAboutus">
+            <ul>
+                <li>
+                    <a class="linksAboutus" id="navStart2" href="#">START</a>
+                </li>
+                <li>
+                    <a class="linksAboutus" id="navHome2" href="#">HOME</a>
+                </li>
+                <li>
+                    <a class="linksAboutus" id="navMusic2" href="#">MUSIC</a>
+                </li>
+                <li>
+                    <a class="linksAboutus" id="navContact3" href="#">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+        <h1>ABOUT US</h1>
+        <div class="aboutusContainer">
+            <div class="marvin">
+                <img src="pictures/marvin.jpeg" alt="picture not found">
+                <p>Marvin Peter</p>
+                <p>Drums</p>
+            </div>
+            <div class="colin">
+                <img src="pictures/colin.jpeg" alt="picture not found">
+                <p>Colin Vierheller</p>
+                <p>Guitar, Vocals</p>
+            </div>
+            <div class="namik">
+                <img src="pictures/namik.jpeg" alt="picture not found">
+                <p>Namik Özcan</p>
+                <p>Bass, Vocals</p>
+            </div>
+        </div>
+
+        <p class="bio">
+            Eine Rockband zu sein ist mehr als nur ein Traum, es ist ein Lebensgefühl, welchem sich die drei Jungs von CoMa12 verschrieben haben.
+            Trotz Ihres jungen Alters transportieren sie das Feeling klassischer Rockmusik vergangener Tage auf ihre ganz eigene und moderne Art ins Hier und Jetzt und beweisen damit, dass echter, handgemachter Rock niemals ganz verschwindet und auf unterschiedlichste Art und Weise immer wieder den Weg in die Zukunft findet.
+            CoMa12 stehen für frischen Rock, mal rau und straight mal verspielt und komplex aber immer von eingängigen Melodien geprägt.
+            In ihren Songs verbindet die Band Vergangenheit und Neuzeit der Musik mit ihrer eigenen, sehr persönlichen Geschichte.
+            Einer Geschichte, die mit zwei Jungs und deren Freundschaft vor nunmehr neunzehn Jahren begann und bis heute andauert.
+            Einer Geschichte von der Idee, mit nur zwölf Jahren eine eigene Band zu gründen, für welche sich nach erst drei Jahren ein Bassist findet, der dieselbe Leidenschaft zur Rockmusik teilt.
+            Mit Gitarre, Schlagzeug, Bass und Gesang haben sich Colin Vierheller, Marvin Peter und Namik Özcan seitdem als eine der jüngsten deutschen Coverrockbands mit ihrem Repertoire aus Rock, Pop und Punk auf den unterschiedlichsten Bühnen Hessens etabliert.
+            Durch fehlende Auftrittsmöglichkeiten aufgrund der Corona Pandemie begannen die drei Jungs aus Südhessen sich Anfang 2020 mehr und mehr ihren Eigenkompositionen zu widmen, für welche bis dahin leider immer etwas zu wenig Zeit vorhanden war.
+            So entstanden innerhalb eines Jahres zehn sehr unterschiedliche Songs, welche Anfang 2021 den Weg auf das erste eigene CoMa12 Album mit dem Namen „Sonic Borders of a Silent Universe“ fanden.
+            Mit einer Auswahl verschiedener eigener Stücke und neuen Coversongs sind CoMa12 nun bereit, live auf der Bühne zu zeigen, dass es viel mehr als nur ein Traum sein kann eine Rockband zu sein… es ist ein Lebensgefühl.
+        </p>
+
+        <h3 class="referenzen">Referenzen</h3>
+        <ul>
+            <li>Reinheimer Markt</li>
+            <li>Goldene Krone Darmstadt</li>
+            <li>Hessentag Pfungstadt</li>
+            <li>Flörsheimer Open Air</li>
+            <li>Newcomer TV</li>
+            <li>Dietzenbacher Kerb</li>
+            <li>Rockradio Wiesbaden</li>
+            <li>Stadt Babenhausen</li>
+            <li>Urberacher Kerb</li>
+            <li>Heinerfest Darmstadt</li>
+            <li>Jugendzentrum Babenhausen</li>
+            <li>Maiway Bensheim</li>
+            <li>Open Doors Neu Isenburg</li>
+            <li>Werkstatt Dreieich</li>
+            <li>Wosp</li>
+            <li>Urberacher Rockfasching</li>
+            <li>Lengfelder Kerb</li>
+        </ul>
+
+    </div>
+
+    <div class="contact">
+        <div class="btnContact" id="btnContact" onclick="showSidebarContact()">
+            <img src="pictures/menu.png" alt="picture not found">
+        </div>
+        <nav class="sidebarContact" id="sidebarContact">
+            <ul>
+                <li>
+                    <a class="linksContact" id="navStart3" href="#">START</a>
+                </li>
+                <li>
+                    <a class="linksContact" id="navHome3" href="#">HOME</a>
+                </li>
+                <li>
+                    <a class="linksContact" id="navMusic3" href="#">MUSIC</a>
+                </li>
+                <li>
+                    <a class="linksContact" id="navAboutus3" href="#">ABOUT US</a>
+                </li>
+            </ul>
+        </nav>
+        <h1>CONTACT</h1>
+        <div class="contactContainer">
+            <div class="social">
+                <p>Folgt und kontaktiert uns auf diesen Social-Media Plattformen!</p>
+                <a target=_blank href="https://www.instagram.com/coma12.music/"><img src="pictures/instagram.png" alt="picture not found"></a>
+                <a target=_blank href="https://www.facebook.com/CoMa12-718321561604762"><img src="pictures/facebook.png" alt="picture not found"></a>
+                <a target=_blank href="https://www.youtube.com/channel/UCCmURwAxGEuZhY1nojgmLSQ"><img src="pictures/youtube.png" alt="picture not found"></a>
+            </div>
+
+            <div class="kontaktformular">
+                <p>Kontaktiert uns per E-Mail!</p>
+                <form action="https://formspree.io/f/mnqlzdvw" method="POST">
+                    <label>Name: *</label>
+                    <input type="text" name="name" required>
+                    <label>E-Mail: *</label>
+                    <input type="email" name="email" required>
+                    <label>Betreff:</label>
+                    <input type="text" name="betreff">
+                    <label>Nachricht: *</label>
+                    <textarea rows="5" name="nachricht" required></textarea>
+                    <button class="submitBtn" type="submit">Senden</button>
+                    <input type="hidden" name="next" value="https://coma12.de/index.html">
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer class="mainFooter">
+        <a class="datenschutz" target="_blank" href="unterseiten/datenschutz.html">Datenschutz</a>
+        <p class="copyright">©2021 CoMa12. all rights reserved. <br> designed by CoMa12</p>
+        <a class="impressum" target="_blank" href="unterseiten/impressum.html">Impressum</a>
+    </footer>
+
+</div>
+
+<script src="app1.2.js"></script>
+</body>

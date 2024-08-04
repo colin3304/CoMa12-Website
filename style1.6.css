@@ -1,0 +1,2224 @@
+*{
+    margin: 0;
+    padding: 0;   
+    box-sizing: border-box;      
+}
+
+
+                                /*Header und Content mit bild*/
+               
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.mainHeader {  
+    border-bottom: rgb(114, 81, 10) solid 4px; 
+    background-color: #000;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.nav a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#navHome {
+    margin: 0px 150px 0px 0px;
+}
+
+#navMusic {
+    margin: 0px 150px 0px 0px;
+}
+
+.logo {   
+    width: 120px;
+    height: 120px;
+}
+
+#navAboutus {
+    margin: 0px 0px 0px 150px;
+}
+
+#navContact {
+    margin: 0px 0px 0px 150px;
+}
+
+.nav a:hover {
+    color: rgb(114, 81, 10); 
+    cursor: pointer;
+}
+
+.content {
+    text-align: center;
+    color: #fff;
+    background-image: url(pictures/background1.jpg);
+    background-size: 100%;
+} 
+
+.wir {
+    width: 100%;
+    border-bottom: rgb(114, 81, 10) 4px solid;
+}
+ 
+                                             /*sidebar home*/
+
+
+.btnHome {
+    position: absolute;
+    margin-top: 20px;
+    left: 10px;
+    transition: left 0.8s ease;
+}
+
+.btnHome:hover {
+    cursor: pointer;
+}
+
+.btnHome.click {
+    left: 130px;
+}
+
+.btnHome img {
+    width: 45px;
+    height: 42px;
+}
+
+.sidebarHome {
+    text-align: center;
+    position: absolute;
+    margin: 20px 0px 0px 10px;
+    left: -200px;
+    width: 110px;
+    height: 120px;
+    line-height: 30px;
+    transition: left 0.8s ease;
+}
+
+.sidebarHome.show {
+    left: 5px;
+}
+
+.sidebarHome a {
+    color: #fff;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.sidebarHome a:hover {
+    color: rgb(114, 81, 10);
+}
+
+.sidebarHome ul {
+    list-style-type: none;
+}
+
+                                           /*home*/
+
+.home h1 {
+    margin-top: 200px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+}
+
+.homeContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.events {
+    margin: 100px 5px 120px 0px;
+    border: rgb(114, 81, 10) 2px double;
+    padding: 50px;
+    text-align: left;
+}
+
+.events h2, li  {
+    margin-bottom: 10px;
+}
+
+.events ul {
+    list-style-type: none;
+}
+
+.events a {
+    color: #fff;
+}
+
+.events a:hover {
+    color: rgb(114, 81, 10);
+}
+
+.news {
+    margin: 100px 0px 120px 5px;
+    border: rgb(114, 81, 10) 2px double;
+    padding: 50px;
+    text-align: left;
+}
+
+.news h2, p {
+    margin-bottom: 10px;
+}
+
+
+                                            /*Gallery*/
+                            
+                                            
+.pictureContainer {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}        
+
+.galleryPicture:hover {
+    opacity: 0.8;
+    border: 2px rgb(114, 81, 10) solid;
+}
+
+.galleryContainer {
+    margin-top: 50px;
+}
+
+.galleryPicture {
+    width: 530px;
+    height: 350px;
+    cursor: pointer;
+    border: rgb(114, 81, 10) solid 1px;
+    border-radius: 5px;
+}
+
+.img-window {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.65);
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.img-window img {
+    max-height: 80vh;
+    max-width: 80vw;
+}
+
+                                                /* next image*/
+.img-btn-next {
+    display: block;
+    padding: 5px 9px;
+    border-radius: 4px;
+    background-color: #000;
+    border: 2px rgb(114, 81, 10) solid;
+    position: fixed;
+    top: 48vh;
+    z-index: 500;
+    color: #fff;
+    cursor: pointer;
+}
+
+.img-btn-next:hover {
+    opacity: 0.8;
+}
+
+.img-btn-prev {
+    display: block;
+    padding: 5px 9px;
+    border-radius: 4px;
+    background-color: #000;
+    border: 2px rgb(114, 81, 10) solid;
+    position: fixed;
+    top: 48vh;
+    z-index: 500;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 17px;
+}
+
+.img-btn-prev:hover {
+    opacity: 0.8;
+}
+
+                                                /*sidebar music*/
+
+.btnMusic {
+    position: absolute;
+    margin-top: 20px;
+    left: 10px;
+    transition: left 0.8s ease;
+}
+
+.btnMusic:hover {
+    cursor: pointer;
+}
+
+.btnMusic.click {
+    left: 130px;
+}
+
+.btnMusic img {
+    width: 45px;
+    height: 42px;
+}
+
+.sidebarMusic {
+    text-align: center;
+    position: absolute;
+    margin: 20px 0px 0px 10px;
+    left: -200px;
+    width: 110px;
+    height: 120px;
+    line-height: 30px;
+    transition: left 0.8s ease;
+}
+
+.sidebarMusic.show {
+    left: 5px;
+}
+
+.sidebarMusic a {
+    color: #fff;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.sidebarMusic a:hover {
+    color: rgb(114, 81, 10);
+}
+
+.sidebarMusic ul {
+    list-style-type: none;
+}                                          
+
+                                         /*music*/
+
+.music h1 {
+    margin-top: 200px;
+    margin-bottom: 70px;
+    padding-top: 20px;
+}                                         
+
+.musicContainer {
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.album {
+    background: url('pictures/cover.jpeg');
+    margin: 100px 50px 100px 50px;
+    border: rgb(161, 161, 161) solid 1px;
+    box-shadow: #000 0px 0px 30px;
+    width: 300px;
+    height: 300px;
+    background-size: 300px 300px;
+    transition: 2s;
+}
+
+.album2 {
+    background: url('pictures/cover2.jpg');
+    margin: 100px 50px 100px 50px;
+    border: rgb(0, 0, 0) solid 3px;
+    box-shadow: #000 0px 0px 50px;
+    width: 300px;
+    height: 300px;
+    background-size: 300px 300px;
+    transition: 2s;
+}
+
+.album:hover {
+    cursor: pointer;
+}
+
+.albumBack {
+    background: url('pictures/coverback.jpg');
+    margin: 100px 80px 100px 100px;
+    border: rgb(161, 161, 161) solid 1px;
+    box-shadow: #000 0px 0px 30px;
+    width: 300px;
+    height: 300px;
+    background-size: 300px 300px;
+}
+
+.titles {
+    text-align: left;
+    margin: 110px 50px 0px 30px;
+}
+
+.titles ol {
+    list-style-type: none;
+}
+
+.musicIcons {
+    flex: 1;
+    margin-top: 80px;
+}
+
+.musicIcons img {
+    width: 50px;
+    height: 50px;
+    margin: 50px 25px 0px 25px;
+}
+
+#deezer {
+    width: 45px;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+#applemusic {
+    width: 70px;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+                                            /*youtube videos*/
+
+.yt {
+    margin: 100px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.ytContent {
+    border: 1px solid rgb(114, 81, 10);
+    width: 400px; 
+    height: 210px;
+}
+
+
+
+                                  /*music player Hörproben*/
+
+.musicPlayer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 120px 0 0 50px;
+}
+
+.playerContainer {
+    background-color: rgb(19, 17, 29);
+    border-radius: 15px;
+    box-shadow: 0 20px 20px 0 rgba(59, 54, 82, 0.6);
+    display: flex;
+    padding: 13px 30px;
+    position: relative;
+    margin: 100px 0;
+    z-index: 10;
+}
+
+.imgContainer {
+    width: 110px;
+    position: relative;
+    margin-top: 80px;
+}
+
+.imgContainer img {
+    width: inherit;
+    height: 120px;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    animation: rotate 3s linear infinite;
+    animation-play-state: paused;
+}
+
+.playerContainer.play .imgContainer img {
+    animation-play-state: running;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    } 
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.actionBtn {
+    background-color: rgb(19, 17, 29);
+    border: 0;
+    color: #838092;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 20px;
+}
+
+
+.actionBtnBig {
+    font-size: 30px;
+}
+
+.actionBtn:focus {
+    outline: 0;
+}
+
+.playerInfo {
+    background-color: rgb(41, 37, 65);
+    border-radius: 15px 15px 0 0;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: calc(100% - 40px);
+    opacity: 0;
+    transform: translateY(0%);
+    padding: 10px 10px 10px 10px;
+    transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+.playerContainer.play .playerInfo {
+    opacity: 1;
+    transform: translateY(-100%);
+}
+
+.playerInfo h4 {
+    margin: 0;
+}
+
+.progressContainer {
+    background-color: rgb(19, 17, 29);
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    height: 4px;
+    width: 100%;
+}
+
+.progress {
+    background-color: rgb(78, 76, 92);
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+.playerContainer2 {
+    background-color: rgb(159, 161, 197);
+    border-radius: 15px;
+    box-shadow: 0 20px 20px 0 rgba(71, 68, 87, 0.6);
+    display: flex;
+    padding: 13px 30px;
+    position: relative;
+    margin: 100px 0 0 25px;
+    z-index: 10;
+}
+
+.imgContainer2 {
+    width: 110px;
+    position: relative;
+    margin-top: 80px;
+}
+
+.imgContainer2 img {
+    width: inherit;
+    height: 120px;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    animation: rotate 3s linear infinite;
+    animation-play-state: paused;
+}
+
+.playerContainer2.play .imgContainer2 img {
+    animation-play-state: running;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    } 
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.navigation2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.actionBtn2 {
+    background-color: rgb(159, 161, 197);
+    border: 0;
+    color: #1a1632;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 20px;
+}
+
+
+.actionBtnBig2 {
+    font-size: 30px;
+}
+
+.actionBtn2:focus {
+    outline: 0;
+}
+
+.playerInfo2 {
+    background-color: rgb(227, 217, 255);
+    color: #1a1632;
+    border-radius: 15px 15px 0 0;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: calc(100% - 40px);
+    opacity: 0;
+    transform: translateY(0%);
+    padding: 10px 10px 10px 10px;
+    transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+.playerContainer2.play .playerInfo2 {
+    opacity: 1;
+    transform: translateY(-100%);
+}
+
+.playerInfo2 h4 {
+    margin: 0;
+}
+
+.progressContainer2 {
+    background-color: rgb(19, 17, 29);
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    height: 4px;
+    width: 100%;
+}
+
+.progress2 {
+    background-color: rgb(78, 76, 92);
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+                                                 /*sidebar about us*/
+
+.btnAboutus {
+    position: absolute;
+    margin-top: 20px;
+    left: 10px;
+    transition: left 0.8s ease;
+}
+
+.btnAboutus:hover {
+    cursor: pointer;
+}
+
+.btnAboutus.click {
+    left: 130px;
+}
+
+.btnAboutus img {
+    width: 45px;
+    height: 42px;
+}
+
+.sidebarAboutus {
+    text-align: center;
+    position: absolute;
+    margin: 20px 0px 0px 10px;
+    left: -200px;
+    width: 110px;
+    height: 120px;
+    line-height: 30px;
+    transition: left 0.8s ease;
+}
+
+.sidebarAboutus.show {
+    left: 5px;
+}
+
+.sidebarAboutus a {
+    color: #fff;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.sidebarAboutus a:hover {
+    color: rgb(114, 81, 10);
+}
+
+.sidebarAboutus ul {
+    list-style-type: none;
+}
+
+
+                                     /*about us*/    
+
+.aboutus h1 {
+    margin-top: 200px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+}                                     
+
+.aboutusContainer {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}     
+
+.colin {
+    flex: 1;
+}        
+
+.marvin {
+    flex: 1.8;
+}    
+
+.namik {
+    flex: 1.8;
+}    
+
+.aboutusContainer img {
+    width: 230px;
+    height: 320px;
+    border: rgb(161, 161, 161) solid 1px;
+    margin-top: 30px;
+}
+
+.bio {
+    margin: 0px 70px 0px 70px;
+    line-height: 1.5em;
+}
+
+.referenzen {
+    margin: 50px 0 25px 0;
+}
+
+                                             /*sidebar contact*/
+
+.btnContact {
+    position: absolute;
+    margin-top: 20px;
+    left: 10px;
+    transition: left 0.8s ease;
+}
+
+.btnContact:hover {
+    cursor: pointer;
+}
+
+.btnContact.click {
+    left: 130px;
+}
+
+.btnContact img {
+    width: 45px;
+    height: 42px;
+}
+
+.sidebarContact {
+    text-align: center;
+    position: absolute;
+    margin: 20px 0px 0px 10px;
+    left: -200px;
+    width: 110px;
+    height: 120px;
+    line-height: 30px;
+    transition: left 0.8s ease;
+}
+
+.sidebarContact.show {
+    left: 5px;
+}
+
+.sidebarContact a {
+    color: #fff;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.sidebarContact a:hover {
+    color: rgb(114, 81, 10);
+}
+
+.sidebarContact ul {
+    list-style-type: none;
+}
+
+                                               /*contact*/
+
+.contact h1 {
+    margin-top: 200px;
+    padding-top: 20px;
+}                                               
+
+.contactContainer {
+    margin: 80px 0px 0px 0px;
+    padding-bottom: 300px;
+}
+
+.contactContainer img {
+    width: 50px;
+    height: 50px;
+    margin: 80px 40px 0px 40px
+}            
+
+                                                         /*Kontaktformular*/
+
+.kontaktformular {
+    margin-top: 120px;
+}
+
+.kontaktformular p {
+    margin-bottom: 50px;
+}
+
+.kontaktformular label, button{
+    display: block;
+    margin: 10px;
+}
+
+.kontaktformular button {
+    margin: auto;
+    padding: 1px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 15px;
+    background-color: #000;
+    border: rgb(114, 81, 10) solid 2px;
+    border-radius: 10px;
+    letter-spacing:2px;
+    transition: 0.5s;
+}
+
+.kontaktformular button:hover {
+    letter-spacing: 3px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.kontaktformular button:active {
+    background: #fff;
+    color: #000;
+}
+
+                                               /*footer impressum und datenschutz*/
+
+.mainFooter {
+    padding-bottom: 10px;
+    display: flex;
+}
+
+.mainFooter a:hover {
+    color: rgb(114, 81, 10);
+}
+
+.datenschutz {
+    flex: 0;
+    margin-left: 200px;
+    color: #fff;
+}
+
+.copyright {
+    flex: 1;
+}
+
+.impressum {
+    flex: 0;
+    margin-right: 200px;
+    color: #fff;
+}
+
+.datenschutzContent {
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(pictures/background1.jpg);
+    background-size: 100%;
+    padding: 50px 150px 50px 150px;
+    line-height: 1.5em;
+} 
+
+.impressumContent {
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(pictures/background1.jpg);
+    background-size: 100%;
+    padding: 50px 200px 800px 200px;
+    line-height: 1.5em;
+} 
+
+
+
+
+                                                     /*kleine Handys*/
+
+@media screen and (max-width: 351px) {
+
+    html,body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .mainHeader {
+        border-bottom: rgb(114, 81, 10) solid 3px; 
+    }
+    
+    .nav a {
+        font-size: 9px;
+    }
+    
+    #navHome {
+        margin: 0 15px 0 10px;
+    }
+    
+    #navMusic {
+        margin: 0 15px 0 0px;
+    }
+    
+    .logo {   
+        width: 80px;
+        height: 80px;
+    }
+    
+    #navAboutus {
+        margin: 0 5px 0 5px;
+    }
+    
+    #navContact {
+        margin: 0 10px 0 5px;
+    }
+
+    .wir {
+        border-bottom: rgb(114, 81, 10) solid 3px; 
+    }
+     
+                                        /*sidebar home*/
+
+    .sidebarHome {
+        margin: 20px 0px 0px 0px;
+        width: 100px;
+        height: 110px;
+        line-height: 27px;
+        font-size: 13px;
+    }
+
+    .btnHome.click {
+        left: 80px;
+    }
+    
+    .btnHome img {
+        width: 30px;
+        height: 25px;
+        margin-top: 4px;
+    }
+
+    .sidebarHome.show {
+        left: 0px;
+    }
+                                                   /*home*/
+
+    .home h1 {
+        margin-top: 250px;
+        font-size: 25px;
+    }                                               
+
+    .homeContainer {
+        display: block;
+    }
+    
+    .events {
+        margin: 120px 30px 120px 30px;
+        padding: 40px;
+        font-size: 12px;
+    }
+    
+    .news {
+        margin: 100px 30px 120px 30px;
+        padding: 40px;
+        font-size: 12px;
+    }
+
+    .img-btn-prev {
+        margin-left: 34px;
+        padding: 1.5px 4px;
+        font-size: 14px;
+    }
+
+    .img-btn-next {
+        margin-right: 34px;
+        padding: 1.5px 4px;
+        font-size: 14px;
+    }
+
+    .galleryPicture {
+        width: 200px;
+        height: 140px;
+        cursor: pointer;
+        border: rgb(114, 81, 10) solid 1px;
+        border-radius: 5px;
+    }
+
+                                                 /*sidebar music */
+
+    .sidebarMusic {
+        margin: 20px 0px 0px 0px;
+        width: 100px;
+        height: 110px;
+        line-height: 27px;
+        font-size: 13px;
+    }
+
+    .btnMusic.click {
+        left: 80px;
+    }
+    
+    .btnMusic img {
+        margin-top: 4px;
+        width: 30px;
+        height: 25px;
+    }
+    
+    .sidebarMusic.show {
+        left: 0px;
+    }
+                                      
+    
+                                             /*music*/
+    
+    .music h1 {
+        font-size: 25px;
+        margin-top: 50px;
+        padding-top: 20px;
+    }                                         
+    
+    .musicContainer {
+        display: block;
+        margin-top: 120px;
+        margin-bottom: 50px;
+        font-size: 13px;
+    }
+    
+    .container {
+        padding: 0;
+    }
+    
+    .album {
+        background: url('pictures/cover.jpeg');
+        margin: auto;
+        border: rgb(161, 161, 161) solid 1px;
+        box-shadow: #000 0px 0px 30px;
+        width: 200px;
+        height: 200px;
+        background-size: 200px 200px;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .album2 {
+        background: url('pictures/cover2.jpg');
+        margin: auto;
+        border: rgb(0, 0, 0) solid 1px;
+        box-shadow: #000 0px 0px 30px;
+        width: 200px;
+        height: 200px;
+        background-size: 200px 200px;
+        transition: 2s;
+    }
+    
+    .albumBack {
+        background: url('pictures/coverback.jpg');
+        margin: auto;
+        border: rgb(161, 161, 161) solid 1px;
+        box-shadow: #000 0px 0px 30px;
+        width: 200px;
+        height: 200px;
+        background-size: 200px 200px;
+    }
+    
+    .titles {
+        display: none;
+    }
+    
+    .musicIcons {
+        margin: 60px 0 100px 0;
+    }
+    
+    .musicIcons img {
+        width: 30px;
+        height: 30px;
+        margin: 30px 10px 0px 10px;
+    }
+
+    #deezer {
+        width: 30px;
+        height: 20px;
+    }
+
+    #applemusic {
+        width: 37px;
+        height: 15px;
+    }
+
+                                        /*youtube videos*/
+
+    .yt {
+        display: grid;
+        gap: 40px;
+    }
+    
+    .ytContent {
+        border: 1px solid rgb(114, 81, 10);
+        width: 180px; 
+        height: 100px;
+    }
+
+                                    /*music player*/
+    
+    .playerContainer {
+        width: 90%;
+        padding: 5px 20px;
+        margin: 50px 0;
+    }
+
+    .musicPlayer {
+        margin: 80px 0 0 0;
+    }
+    
+    .imgContainer {
+        width: 80px;
+        margin-top: 65px;
+    }
+    
+    .imgContainer img {
+        height: 90px;
+    }
+    
+    .actionBtn {
+        font-size: 12px;
+        margin: 8px 0 8px 30px;
+        padding: 0;
+    }
+    
+    .actionBtnBig {
+        font-size: 20px;
+    }
+    
+    .playerInfo {
+        font-size: 12px;
+        padding: 5px 8px 5px 5px;
+    }
+
+    .playerContainer2 {
+        width: 90%;
+        padding: 5px 20px;
+        margin: 50px 0;
+    }
+
+    .musicPlayer2 {
+        margin: 80px 0 0 0;
+    }
+    
+    .imgContainer2 {
+        width: 80px;
+        margin-top: 65px;
+    }
+    
+    .imgContainer2 img {
+        height: 90px;
+    }
+    
+    .actionBtn2 {
+        font-size: 12px;
+        margin: 8px 0 8px 30px;
+        padding: 0;
+    }
+    
+    .actionBtnBig2 {
+        font-size: 20px;
+    }
+    
+    .playerInfo2 {
+        font-size: 12px;
+        padding: 5px 8px 5px 5px;
+    }
+    
+
+                                /* sidebar aboutus*/
+                                
+    .sidebarAboutus {
+        margin: 20px 0px 0px 0px;
+        width: 100px;
+        height: 110px;
+        line-height: 27px;
+        font-size: 13px;
+    }
+
+    .btnAboutus.click {
+        left: 65px;
+    }
+
+    .btnAboutus img {
+        margin-top: 4px;
+        width: 30px;
+        height: 25px;
+    }
+
+    .sidebarAboutus.show {
+        left: -10px;
+    }
+
+
+                                            /* aboutus */
+
+    .aboutus h1 {
+        font-size: 25px;
+        margin-top: 50px;
+        padding-top: 20px;
+    }                                     
+
+    .aboutusContainer {
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }     
+
+    .aboutusContainer p {
+        font-size: 12px;
+    }
+
+    .aboutusContainer img {
+        width: 80px;
+        height: 110px;
+        margin-top: 30px;
+    }
+
+    .bio {
+        margin: 0px 40px 0px 40px;
+        line-height: 1.3em;
+        font-size: 13px;
+    }
+
+
+                                        /*sidebar contact*/
+
+    .sidebarContact {
+        margin: 20px 0px 0px 0px;
+        width: 100px;
+        height: 110px;
+        line-height: 27px;
+        font-size: 13px;
+    }
+
+    .btnContact.click {
+        left: 70px;
+    }
+
+    .btnContact img {
+        width: 30px;
+        height: 25px;
+        margin-top: 4px;
+    }
+
+    .sidebarContact.show {
+        left: -5px;
+    }
+
+                                        /* contact*/
+
+    .contact h1 {
+        margin-top: 50px;
+        padding-top: 20px;
+        font-size: 25px;
+    }                                               
+
+    .contactContainer {
+        margin: 150px 0px 0px 0px;
+        padding-bottom: 300px;
+        font-size: 13px;
+    }
+
+    .contactContainer img {
+        width: 35px;
+        height: 35px;
+        margin: 50px 25px 50px 25px;
+    }            
+
+                                                /*footer impressum und datenschutz*/
+
+
+    .mainFooter {
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+
+    .datenschutz {
+        margin: 20px 0 0 10px;
+    }
+
+    .impressum {
+        margin: 20px 10px 0 0;
+    }
+
+                                   /* extra seiten*/
+
+
+    .datenschutzContent {
+        font-size: 12px;
+        padding: 20px;
+        overflow-x: hidden;
+    } 
+    
+    .impressumContent {
+        font-size: 12px;
+        padding: 20px;
+        padding-bottom: 100px;
+        overflow-x: hidden;
+    } 
+    
+    
+}
+
+
+                                               /* Handy */
+
+
+@media screen and (min-width: 351px) and (max-width: 500px) {
+
+    .mainHeader {  
+        border-bottom: rgb(114, 81, 10) solid 3px; 
+    }
+    
+    .nav {
+         justify-content: space-between;
+    }
+    
+    .nav a {
+        font-size: 9.5px;
+    }
+    
+    #navHome {
+        margin: 0 15px 0 10px;
+    }
+    
+    #navMusic {
+        margin: 0 15px 0 0px;
+    }
+    
+    .logo {   
+        width: 120px;
+        height: 120px;
+    }
+    
+    #navAboutus {
+        margin: 0 5px 0 5px;
+    }
+    
+    #navContact {
+        margin: 0 10px 0 5px;
+    }
+
+    .wir {
+        height: 33%;
+        border-bottom:rgb(114, 81, 10) 3px solid;
+    }
+     
+                                        /*sidebar home*/
+
+    .sidebarHome {
+        margin: 20px 0px 0px 0px;
+        width: 100px;
+        height: 110px;
+        line-height: 27px;
+        font-size: 15px;
+    }
+
+    .btnHome.click {
+        left: 80px;
+    }
+    
+    .btnHome img {
+        width: 35px;
+        height: 30px;
+    }
+
+    .sidebarHome.show {
+        left: 0px;
+    }
+                                                   /*home*/
+
+    .home h1 {
+        margin-top: 350px;
+        font-size: 30px;
+    }                                               
+
+    .homeContainer {
+        display: block;
+    }
+    
+    .events {
+        font-size: 14px;
+        margin: 120px 30px 120px 30px;
+        padding: 40px;
+    }
+    
+    .news {
+        font-size: 14px;
+        margin: 100px 30px 120px 30px;
+        padding: 40px;
+    }
+
+    .galleryPicture {
+        width: 250px;
+        height: 170px;
+        cursor: pointer;
+        border: rgb(114, 81, 10) solid 1px;
+        border-radius: 5px;
+    }
+
+    .img-btn-prev {
+        margin-left: 30px;
+        padding: 2px 5px;
+        font-size: 14px;
+    }
+
+    .img-btn-next {
+        margin-right: 30px;
+        padding: 2px 5px;
+        font-size: 14px;
+    }
+
+                                                 /*sidebar music */
+
+    .sidebarMusic {
+        margin: 20px 0px 0px 0px;
+        width: 100px;
+        height: 110px;
+        line-height: 27px;
+        font-size: 15px;
+    }
+
+    .btnMusic.click {
+        left: 80px;
+    }
+    
+    .btnMusic img {
+        width: 35px;
+        height: 30px;
+    }
+    
+    .sidebarMusic.show {
+        left: 0px;
+    }
+                                      
+    
+                                             /*music*/
+    
+    .music h1 {
+        font-size: 30px;
+        margin-top: 50px;
+        padding-top: 20px;
+    }                                         
+    
+    .musicContainer {
+        display: block;
+        margin-top: 120px;
+        margin-bottom: 50px;
+    }
+    
+    .container {
+        padding: 0;
+    }
+    
+    .album {
+        background: url('pictures/cover.jpeg');
+        margin: auto;
+        border: rgb(161, 161, 161) solid 1px;
+        box-shadow: #000 0px 0px 30px;
+        width: 250px;
+        height: 250px;
+        background-size: 250px 250px;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .album2 {
+        background: url('pictures/cover2.jpg');
+        margin: auto;
+        border: rgb(0, 0, 0) solid 1px;
+        box-shadow: #000 0px 0px 30px;
+        width: 250px;
+        height: 250px;
+        background-size: 250px 250px;
+        transition: 2s;
+    }
+    
+    .albumBack {
+        background: url('pictures/coverback.jpg');
+        margin: auto;
+        border: rgb(161, 161, 161) solid 1px;
+        box-shadow: #000 0px 0px 30px;
+        width: 250px;
+        height: 250px;
+        background-size: 250px 250px;
+    }
+    
+    .titles {
+        display: none;
+    }
+    
+    .musicIcons {
+        margin: 60px 0 100px 0;
+    }
+    
+    .musicIcons img {
+        width: 40px;
+        height: 40px;
+        margin: 30px 19px 0px 19px;
+    }
+
+    #deezer {
+        width: 40px;
+        height: 30px;
+    }
+
+    #applemusic {
+        width: 60px;
+        height: 18px;
+    }
+
+                                                    /*youtube videos*/
+
+    .yt {
+        display: grid;
+        gap: 40px;
+    }
+    
+    .ytContent {
+        border: 1px solid rgb(114, 81, 10);
+        width: 200px; 
+        height: 120px;
+    }
+
+                                            /*music player*/
+
+    .playerContainer {
+        width: 75%;
+        padding: 5px 20px;
+        margin: 60px 0;
+    }
+
+    .musicPlayer {
+        margin: 60px 0 0 0;
+    }
+    
+    .imgContainer {
+        width: 80px;
+        margin-top: 65px;
+    }
+    
+    .imgContainer img {
+        height: 90px;
+    }
+    
+    .actionBtn {
+        font-size: 12px;
+        margin: 8px 0 8px 30px;
+        padding: 0;
+    }
+    
+    .actionBtnBig {
+        font-size: 20px;
+    }
+    
+    .playerInfo {
+        font-size: 12px;
+        padding: 5px 8px 5px 5px;
+    }
+
+    .playerContainer2 {
+        width: 75%;
+        padding: 5px 20px;
+        margin: 60px 0;
+    }
+
+    .musicPlayer2 {
+        margin: 60px 0 0 0;
+    }
+    
+    .imgContainer2 {
+        width: 80px;
+        margin-top: 65px;
+    }
+    
+    .imgContainer2 img {
+        height: 90px;
+    }
+    
+    .actionBtn2 {
+        font-size: 12px;
+        margin: 8px 0 8px 30px;
+        padding: 0;
+    }
+    
+    .actionBtnBig2 {
+        font-size: 20px;
+    }
+    
+    .playerInfo2 {
+        font-size: 12px;
+        padding: 5px 8px 5px 5px;
+    }
+
+                                /* sidebar aboutus*/
+                                
+    .sidebarAboutus {
+        margin: 20px 0px 0px 0px;
+        width: 100px;
+        height: 110px;
+        line-height: 27px;
+        font-size: 15px;
+    }
+
+    .btnAboutus.click {
+        left: 80px;
+    }
+
+    .btnAboutus img {
+        width: 35px;
+        height: 30px;
+    }
+
+    .sidebarAboutus.show {
+        left: 0px;
+    }
+
+
+                                            /* aboutus */
+
+    .aboutus h1 {
+        font-size: 25px;
+        margin-top: 50px;
+        padding-top: 20px;
+    }                                     
+
+    .aboutusContainer {
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }     
+
+    .aboutusContainer img {
+        width: 110px;
+        height: 150px;
+        margin-top: 30px;
+    }
+
+    .bio {
+        font-size: 15px;
+        margin: 0px 50px 0px 50px;
+        line-height: 1.3em;
+    }
+
+
+                                        /*sidebar contact*/
+
+    .sidebarContact {
+        margin: 20px 0px 0px 0px;
+        width: 100px;
+        height: 110px;
+        line-height: 27px;
+        font-size: 15px;
+    }
+
+    .btnContact.click {
+        left: 80px;
+    }
+
+    .btnContact img {
+        width: 35px;
+        height: 30px;
+    }
+
+    .sidebarContact.show {
+        left: 0px;
+    }
+
+                                        /* contact*/
+
+    .contact h1 {
+        margin-top: 50px;
+        padding-top: 20px;
+        font-size: 25px;
+    }                                               
+
+    .contactContainer {
+        margin: 150px 0px 0px 0px;
+        padding-bottom: 300px;
+    }
+
+    .contactContainer img {
+        width: 50px;
+        height: 50px;
+        margin: 50px 25px 50px 25px;
+    }            
+
+                                                /*footer impressum und datenschutz*/
+
+
+    .mainFooter {
+        padding-bottom: 10px;
+    }
+
+    .datenschutz {
+        margin: 20px 0 0 10px;
+    }
+
+    .impressum {
+        margin: 20px 10px 0 0;
+    }
+
+                                   /* extra seiten*/
+
+
+    .datenschutzContent {
+        font-size: 12px;
+        padding: 20px;
+    } 
+
+    .datenschutzContent p {
+        width: 90vw;
+    }
+    
+    .impressumContent {
+        font-size: 12px;
+        padding: 20px;
+        padding-bottom: 300px;
+    } 
+    
+    .impressumContent p {
+        width: 90vw;
+    }
+
+}
+
+
+@media screen and (min-width: 501px) and (max-width: 700px) {
+    
+    .nav {
+        justify-content: space-between;
+   }
+   
+   .nav a {
+       font-size: 15px;
+   }
+   
+   #navHome {
+       margin: 0 15px 0 20px;
+   }
+   
+   #navMusic {
+       margin: 0 15px 0 0px;
+   }
+   
+   .logo {   
+       width: 140px;
+       height: 140px;
+   }
+   
+   #navAboutus {
+       margin: 0 5px 0 5px;
+   }
+   
+   #navContact {
+       margin: 0 15px 0 5px;
+   }
+
+   .wir {
+       height: 33%;
+   }
+
+                                              /*home*/
+
+   .home h1 {
+       margin-top: 400px;
+   }
+
+   .homeContainer {
+       margin-top: 100px;
+       display: block;
+   }
+
+   .events {
+       margin: 200px 50px 50px 50px;
+       border: rgb(114, 81, 10) 2px double;
+       padding: 30px;
+   }
+   
+   .news {
+       margin: 50px 50px 300px 50px;
+       border: rgb(114, 81, 10) 2px double;
+       padding: 50px;
+   }
+
+    .img-btn-prev {
+        margin-left: 25px;
+        padding: 3px 6px;
+        font-size: 15px;
+    }
+
+    .img-btn-next {
+        margin-right: 25px;
+        padding: 3px 6px;
+        font-size: 15px;
+    }
+
+                                    /*Gallery */
+    .galleryPicture {
+        width: 330px;
+        height: 220px;
+        cursor: pointer;
+        border: rgb(114, 81, 10) solid 1px;
+        border-radius: 5px;
+    }
+
+                                   /*music*/
+
+   .music h1 {
+       margin-top: 150px;
+   }                                         
+   
+   .musicContainer {
+       display: block;
+   }
+
+   .container {
+       padding: 0;
+   }
+   
+   .album {
+    background: url('pictures/cover.jpeg');
+    margin: auto;
+    border: rgb(161, 161, 161) solid 1px;
+    box-shadow: #000 0px 0px 30px;
+    width: 300px;
+    height: 300px;
+    background-size: 300px 300px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.album2 {
+    background: url('pictures/cover2.jpg');
+    margin: auto;
+    border: rgb(0, 0, 0) solid 1px;
+    box-shadow: #000 0px 0px 30px;
+    width: 300px;
+    height: 300px;
+    background-size: 300px 300px;
+    transition: 2s;
+}
+
+.albumBack {
+    background: url('pictures/coverback.jpg');
+    margin: auto;
+    border: rgb(161, 161, 161) solid 1px;
+    box-shadow: #000 0px 0px 30px;
+    width: 300px;
+    height: 300px;
+    background-size: 300px 300px;
+}
+
+   .titles {
+       display: none;
+   }
+   
+   .musicIcons {
+       margin-top: 60px;
+       margin-bottom: 120px;
+   }
+   
+   .musicIcons img {
+       width: 50px;
+       height: 50px;
+       margin: 50px 25px 0px 25px;
+   }
+
+
+                                    /*music player*/
+
+
+    .musicPlayer {
+        margin: 80px 0 0 0;
+    }                        
+    
+                                        /*youtube videos*/
+    
+    .yt {
+        display: grid;
+        gap: 80px;
+    }
+    
+    .ytContent {
+        border: 1px solid rgb(114, 81, 10);
+        width: 300px; 
+        height: 180px;
+    }
+   
+
+                                /*about us*/
+
+   .aboutus h1 {
+       margin-bottom: 100px;
+   }                                     
+   
+   .aboutusContainer {
+       margin-bottom: 100px;
+   }      
+   
+   .aboutusContainer img {
+       width: 150px;
+       height: 210px;
+   }
+   
+   .bio {
+       margin: 0px 70px 250px 70px;
+       line-height: 1.4em;
+   }
+   
+                                   /*contact*/
+
+
+   .contact h1 {
+       margin-bottom: 200px;
+   }   
+
+   .contactContainer {
+       padding-bottom: 600px;
+       font-size: 20px;
+   }
+
+   .contactContainer img {
+       margin-top: 150px;
+   }       
+
+                                   /*footer*/
+
+   .mainFooter {
+       padding-bottom: 10px;
+   }
+
+   .datenschutz {
+       margin: 20px 0px 0px 80px;
+   }
+
+   .impressum {
+       margin: 20px 80px 0px 0px;
+   }
+
+                                           /*nebenseiten*/
+
+   .datenschutzContent {
+       font-size: 20px;
+       padding: 20px;
+       padding-bottom: 500px;
+   } 
+
+   .datenschutzContent p {
+       padding: 30px;
+   }
+   
+   .impressumContent {
+       font-size: 20px;
+       padding: 30px;
+       padding-bottom: 800px;
+   } 
+   
+   .impressumContent p {
+       width: 90vw;
+   }
+
+}
+
+
+@media screen and (min-width: 701px) and (max-width: 1050px) {
+
+    .nav {
+         justify-content: space-between;
+    }
+    
+    .nav a {
+        font-size: 20px;
+    }
+    
+    #navHome {
+        margin: 0 15px 0 20px;
+    }
+    
+    #navMusic {
+        margin: 0 15px 0 0px;
+    }
+    
+    .logo {   
+        width: 140px;
+        height: 140px;
+    }
+    
+    #navAboutus {
+        margin: 0 5px 0 5px;
+    }
+    
+    #navContact {
+        margin: 0 15px 0 5px;
+    }
+
+    .wir {
+        height: 33%;
+    }
+
+                                               /*home*/
+
+    .home h1 {
+        margin-top: 400px;
+    }
+
+    .homeContainer {
+        margin-top: 100px;
+        display: block;
+    }
+
+    .events {
+        margin: 200px 50px 50px 50px;
+        border: rgb(114, 81, 10) 2px double;
+        padding: 30px;
+    }
+    
+    .news {
+        margin: 50px 50px 300px 50px;
+        border: rgb(114, 81, 10) 2px double;
+        padding: 50px;
+    }
+
+    .img-btn-prev {
+        margin-left: 20px;
+        padding: 5px 8px;
+        font-size: 17px;
+    }
+
+    .img-btn-next {
+        margin-right: 20px;
+        padding: 5px 8px;
+        font-size: 17px;
+    }
+
+                                    /*music*/
+
+    .music h1 {
+        margin-top: 150px;
+    }                                         
+    
+    .musicContainer {
+        display: block;
+    }
+    
+    .album {
+        margin: 100px 50px 0px 50px;
+        width: 300px;
+        height: 300px;
+        float: left;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .album2 {
+        background: url('pictures/cover2.jpg');
+        margin: 100px 50px 0px 50px;
+        float: left;
+        border: rgb(0, 0, 0) solid 1px;
+        box-shadow: #000 0px 0px 30px;
+        width: 300px;
+        height: 300px;
+        background-size: 300px 300px;
+        transition: 2s;
+    }
+    
+    .titles {
+        margin: 110px 0px 100px 0px;
+        padding-top: 100px;
+        font-size: 14.5px;
+    }
+    
+    .musicIcons {
+        margin-top: 60px;
+        margin-bottom: 120px;
+    }
+    
+    .musicIcons img {
+        width: 50px;
+        height: 50px;
+        margin: 50px 25px 0px 25px;
+    }
+
+                                /*youtube videos*/
+
+    .yt {
+        display: flex;
+        gap: 50px;
+    }
+    
+    .ytContent {
+        border: 1px solid rgb(114, 81, 10);
+        width: 300px; 
+        height: 180px;
+    }
+
+                                               /*music player*/
+    
+    .musicPlayer {
+        margin: 80px 0 0 0;
+    }                                           
+
+                                 /*about us*/
+
+    .aboutus h1 {
+        margin-bottom: 100px;
+    }                                     
+    
+    .aboutusContainer {
+        margin-bottom: 100px;
+    }      
+    
+    .aboutusContainer img {
+        width: 200px;
+        height: 275px;
+    }
+    
+    .bio {
+        margin: 0px 70px 250px 70px;
+        line-height: 1.4em;
+    }
+    
+                                    /*contact*/
+
+
+    .contact h1 {
+        margin-bottom: 200px;
+    }   
+
+    .contactContainer {
+        padding-bottom: 600px;
+        font-size: 20px;
+    }
+
+    .contactContainer img {
+        margin-top: 150px;
+    }       
+
+                                    /*footer*/
+
+    .mainFooter {
+        padding-bottom: 10px;
+    }
+
+    .datenschutz {
+        margin: 20px 0px 0px 80px;
+    }
+
+    .impressum {
+        margin: 20px 80px 0px 0px;
+    }
+
+                                            /*nebenseiten*/
+
+    .datenschutzContent {
+        font-size: 20px;
+        padding: 20px;
+        padding-bottom: 500px;
+    } 
+
+    .datenschutzContent p {
+        padding: 30px;
+    }
+    
+    .impressumContent {
+        font-size: 20px;
+        padding: 30px;
+        padding-bottom: 800px;
+    } 
+    
+    .impressumContent p {
+        width: 90vw;
+    }
+
+}
+
+@media screen and (min-width: 1050px) and (max-width: 1200px) {
+    
+    .musicContainer {
+        display: block;
+    }
+
+    .album {
+        margin: 100px 100px 0px 100px;
+        float: left;
+    }
+
+    .album2 {
+        margin: 100px 100px 0px 100px;
+        float: left;;
+    }
+    
+    .titles {
+        margin: 110px 0px 100px 0px;
+        padding-top: 105px;
+    }
+
+    .musicPlayer {
+        margin: 80px 0 0 0;
+    }
+
+}         
+
+@media screen and (min-width: 1350px) {
+    
+    .album {
+        margin: 100px 150px 0px 150px;
+        float: left;
+    }
+
+    .album2 {
+        margin: 100px 150px 0px 150px;
+        float: left;
+    }
+
+    .titles {
+        margin: 110px 50px 100px 0px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+
+    .bio {
+        margin-bottom: 0;
+    }
+}
