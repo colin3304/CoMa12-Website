@@ -480,11 +480,11 @@ function changeImg(changeDir) {
         //let calcImgToEdge = ((windowWidth - imgWidth) / 2) - 60;
 
         let nextBtn = document.querySelector(".img-btn-next");
-        nextBtn.style.cssText = "right: " + 250 + "px;"
+        //nextBtn.style.cssText = "right: " + 250 + "px;"
 
         let prevBtn = document.querySelector(".img-btn-prev");
-        prevBtn.style.cssText = "left: " + 250 + "px;"
-        //console.log(calcImgToEdge);
+        //prevBtn.style.cssText = "left: " + 250 + "px;"
+
     }
 
 }
