@@ -510,7 +510,7 @@ img.addEventListener('click', function() {
     newImg.onload = function() {
 
         let imgWidth = this.width;
-        let calcImgToEdge = ((windowWidth) / 2) - 710;
+        let calcImgToEdge = ((windowWidth - imgWidth) / 2) - 60;
 
         let newPrevBtn = document.createElement("a");
         let btnPrevText = document.createTextNode("<");
